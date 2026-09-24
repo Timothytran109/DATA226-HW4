@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: TT_DATABASE
+    schema: raw
+
+    tables:
+      - name: user_session_channel
+      - name: session_timestamp

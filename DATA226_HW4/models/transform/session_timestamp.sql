@@ -1,4 +1,5 @@
-SELECT sessionId,
+SELECT
+    sessionId,
     ts
-FROM { { source('raw', 'session_timestamp') } }
+FROM {{ source('raw', 'session_timestamp') }}
 WHERE sessionId IS NOT NULL
